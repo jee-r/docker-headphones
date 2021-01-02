@@ -23,9 +23,8 @@ RUN apk update && \
         build-base \
         g++ \
         gcc \
-        make
-
-RUN cd /tmp && \
+        make && \
+    cd /tmp && \
     mkdir /tmp/shntool && \
     wget http://shnutils.freeshell.org/shntool/dist/src/shntool-${SHNTOOL_VERSION}.tar.gz -O - | tar -xz -C /tmp/shntool --strip-components=1 && \
     git clone git://git.savannah.gnu.org/config.git && \
