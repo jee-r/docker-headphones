@@ -1,17 +1,17 @@
 #!/bin/sh
 
 if [ ! -d /app/headphones ]; then
-    echo -n "\'/app/headphones\' directory don\'t exist"
+    echo "'/app/headphones/' directory don't exist"
     FIRST_RUN=true
     echo "clone repository in '/app/headphones'"
     git clone --depth 1 https://github.com/rembo10/headphones.git /app/headphones
-    echo -n "First run need to init /!\"
-    echo -n "1. Stop the container"
-    echo -n "2. Edit /config/config.ini on host"
-    echo -n "3. Restart the container"
+    echo "First run need to init /!\\"
+    echo "1. Stop the container"
+    echo "2. Edit /config/config.ini on host"
+    echo "3. Restart the container"
 fi
 
-echo -n "running headphones on master branch"
+echo "running headphones on master branch"
 /usr/bin/python2 /app/headphones/Headphones.py \
     --datadir=/config \
     --config=/config/config.ini \
