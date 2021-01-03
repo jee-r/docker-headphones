@@ -13,17 +13,26 @@ COPY rootfs /
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache --upgrade \
-        python2 \
         git \
         tzdata \
+        python2 \
+        py2-pip \
         ffmpeg \
         sox \
+        openssl
 	    flac && \
     apk add --no-cache --upgrade --virtual=build-dependencies --upgrade \
         build-base \
         g++ \
         gcc \
         make && \
+    pip install -U \
+	   cheetah \
+	   lxml \
+	   pillow \
+	   pyopenssl \
+	   requests \
+	   urllib3 && \
     cd /tmp && \
     mkdir /tmp/shntool && \
     wget http://shnutils.freeshell.org/shntool/dist/src/shntool-${SHNTOOL_VERSION}.tar.gz -O - | tar -xz -C /tmp/shntool --strip-components=1 && \
