@@ -19,7 +19,7 @@ RUN apk update && \
         py2-pip \
         ffmpeg \
         sox \
-        openssl
+        openssl \
 	    flac && \
     apk add --no-cache --upgrade --virtual=build-dependencies --upgrade \
         build-base \
