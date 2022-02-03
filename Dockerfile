@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.15
 
 LABEL name="docker-headphones" \
       maintainer="Jee jee@jeer.fr" \
@@ -14,9 +14,10 @@ RUN apk update && \
     apk upgrade && \
     apk add --no-cache --upgrade \
         git \
+        musl \
         tzdata \
-        python2 \
-        py2-pip \
+        python3 \
+        py3-pip \
         ffmpeg \
         sox \
         openssl \
@@ -26,13 +27,6 @@ RUN apk update && \
         g++ \
         gcc \
         make && \
-    pip install -U \
-	   cheetah \
-	   lxml \
-	   pillow \
-	   pyopenssl \
-	   requests \
-	   urllib3 && \
     cd /tmp && \
     mkdir /tmp/shntool && \
     wget http://shnutils.freeshell.org/shntool/dist/src/shntool-${SHNTOOL_VERSION}.tar.gz -O - | tar -xz -C /tmp/shntool --strip-components=1 && \
