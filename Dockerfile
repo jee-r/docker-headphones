@@ -4,7 +4,9 @@ LABEL name="docker-headphones" \
       maintainer="Jee jee@jeer.fr" \
       description="Headphones is an automated music downloader for NZB and Torrent, written in Python." \
       url="https://github.com/rembo10/headphones" \
-      org.label-schema.vcs-url="https://github.com/jee-r/docker-headphones"
+      org.label-schema.vcs-url="https://github.com/jee-r/docker-headphones" \
+      org.opencontainers.image.source="https://github.com/jee-r/docker-headphones"
+
 
 ARG SHNTOOL_VERSION=3.0.10
 
