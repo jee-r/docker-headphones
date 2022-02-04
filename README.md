@@ -1,25 +1,32 @@
 # docker-headphones
 
-[![Drone (cloud)](https://img.shields.io/drone/build/jee-r/docker-headphones?&style=flat-square)](https://cloud.drone.io/jee-r/docker-headphones)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/j33r/headphones?style=flat-square)](https://microbadger.com/images/j33r/headphones)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/j33r/headphones?style=flat-square)](https://microbadger.com/images/j33r/headphones)
 [![Docker Pulls](https://img.shields.io/docker/pulls/j33r/headphones?style=flat-square)](https://hub.docker.com/r/j33r/headphones)
-[![DockerHub](https://shields.io/badge/Dockerhub-j33r/headphones-%232496ED?logo=docker&style=flat-square)](https://hub.docker.com/r/j33r/headphones)
+[![DockerHub](https://img.shields.io/badge/Dockerhub-j33r/headphones-%232496ED?logo=docker&style=flat-square)](https://hub.docker.com/r/j33r/headphones)
+[![ghcr.io](https://img.shields.io/badge/ghrc%2Eio-jee%2D-r/headphones-%232496ED?logo=github&style=flat-square)](https://ghcr.io/jee-r/headphones)
 
 A docker image for [Headphones](https://github.com/rembo10/headphones/)
 
-![Headphones Logo](https://github.com/rembo10/headphones/raw/master/data/images/headphoneslogo.png)
+![Headphones Logo](https:////images.weserv.nl/?url=https://github.com/rembo10/headphones/raw/master/data/images/headphoneslogo.png&w=32&h=32)
+
 
 # Supported tags
 
-| Tags |  Size | Layers |
-|-|-|-|
-| `latest`, `stable`, `master` | ![](https://img.shields.io/docker/image-size/j33r/headphones/latest?style=flat-square) | ![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/j33r/headphones/latest?style=flat-square) |
-| `dev` | ![](https://img.shields.io/docker/image-size/j33r/headphones/dev?style=flat-square) | ![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/j33r/headphones/dev?style=flat-square) |
+| Tags | Size | Platforms | Build |
+|-|-|-|-|
+| `latest`, `master` | ![](https://img.shields.io/docker/image-size/j33r/headphones/latest?style=flat-square) | `amd64` | ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jee-r/docker-headphones/Deploy/master?style=flat-square) 
+| `dev` | ![](https://img.shields.io/docker/image-size/j33r/headphones/dev?style=flat-square)  | `amd64`| ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jee-r/docker-headphones/Deploy/dev?style=flat-square)
 
 # What is headphones?
 
+From [https://github.com/rembo10/headphones](https://github.com/rembo10/headphones):
+
 > Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent, Deluge and Blackhole.
+
+- Source code :
+- Documentation : 
+    - https://github.com/rembo10/headphones/wiki
+    - https://github.com/rembo10/headphones/blob/master/API.md
 
 # How to use these images
 
