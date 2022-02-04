@@ -5,10 +5,7 @@
 [![DockerHub](https://img.shields.io/badge/Dockerhub-j33r/headphones-%232496ED?logo=docker&style=flat-square)](https://hub.docker.com/r/j33r/headphones)
 [![ghcr.io](https://img.shields.io/badge/ghrc%2Eio-jee%2D-r/headphones-%232496ED?logo=github&style=flat-square)](https://ghcr.io/jee-r/headphones)
 
-A docker image for [Headphones](https://github.com/rembo10/headphones/)
-
-![Headphones Logo](https:////images.weserv.nl/?url=https://github.com/rembo10/headphones/raw/master/data/images/headphoneslogo.png&w=32&h=32)
-
+A docker image for [Headphones](https://github.com/rembo10/headphones/) ![Headphones Logo](https://images.weserv.nl/?url=https://github.com/rembo10/headphones/raw/master/data/images/headphoneslogo.png&w=32&h=32)
 
 # Supported tags
 
