@@ -51,6 +51,7 @@ RUN apk update && \
     rm -rf /tmp/*
 
 WORKDIR /config
+EXPOSE 8181
 
 VOLUME /app
 STOPSIGNAL SIGQUIT
