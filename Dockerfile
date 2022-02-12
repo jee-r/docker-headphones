@@ -23,7 +23,7 @@ RUN apk update && \
         ffmpeg \
         sox \
         openssl \
-	    flac && \
+        flac && \
     apk add --no-cache --upgrade --virtual=build-dependencies --upgrade \
         build-base \
         g++ \
