@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - main
       - dev
   schedule:
     - cron: '33 3 * * 1'

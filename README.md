@@ -11,7 +11,7 @@ A docker image for [Headphones](https://github.com/rembo10/headphones/) ![Headph
 
 | Tags | Size | Platforms | Build |
 |-|-|-|-|
-| `latest`, `master` | ![](https://img.shields.io/docker/image-size/j33r/headphones/latest?style=flat-square) | `amd64` | ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jee-r/docker-headphones/Deploy/master?style=flat-square) 
+| `latest`, `master`, `main` | ![](https://img.shields.io/docker/image-size/j33r/headphones/latest?style=flat-square) | `amd64` | ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jee-r/docker-headphones/Deploy/main?style=flat-square) 
 | `dev` | ![](https://img.shields.io/docker/image-size/j33r/headphones/dev?style=flat-square)  | `amd64`| ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jee-r/docker-headphones/Deploy/dev?style=flat-square)
 
 # What is headphones?
