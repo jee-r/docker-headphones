@@ -2,16 +2,14 @@ name: Mirroring to remote repos
 on:
   push:
     branches:
-      - master
       - main
-      - dev
 jobs:
   mirroring:
     name: Mirror
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: mirror to gitlab.com
