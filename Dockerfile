@@ -7,6 +7,7 @@ LABEL name="docker-headphones" \
       org.label-schema.vcs-url="https://github.com/jee-r/docker-headphones" \
       org.opencontainers.image.source="https://github.com/jee-r/docker-headphones"
 
+ENV GIT_BRANCH=develop
 
 ARG SHNTOOL_VERSION=3.0.10
 

@@ -1,7 +1,11 @@
 #!/bin/sh
 
-if [ ! -d /app/headphones ]; then
-    git clone --depth 1 https://github.com/rembo10/headphones.git /app/headphones
+repository_dir="/app/headphones"
+
+if [ ! -d "$repository_dir" ]; then
+    git clone --depth 1 --branch "$GIT_BRANCH" https://github.com/rembo10/headphones.git "$repository_dir"
+else
+    git --git-dir="$repository_dir/.git" --work-tree="$repository_dir" pull
 fi
 
 if [ ! -f /config/config.ini ]; then
