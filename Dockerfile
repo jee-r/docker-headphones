@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM alpine:3.20
 
 LABEL name="docker-headphones" \
       maintainer="Jee jee@jeer.fr" \
